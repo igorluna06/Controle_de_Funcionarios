@@ -1,0 +1,71 @@
+💼 Exercício: Sistema de Gestão de Funcionários
+🎯 Objetivo:
+
+Criar um programa em Java que gerencie diferentes tipos de funcionários de uma empresa (por exemplo, efetivo,
+temporário e estagiário), utilizando classes abstratas, interfaces, herança e tratamento de exceções.
+
+🧱 Requisitos:
+
+Classe Abstrata:
+Funcionario
+
+Atributos: nome, salarioBase
+
+Método abstrato: calcularSalarioFinal()
+
+Método concreto: exibirDados()
+
+Interface:
+Bonificacao
+
+Método: void aplicarBonus(double valor);
+
+Subclasses:
+
+FuncionarioEfetivo
+
+FuncionarioTemporario
+
+Estagiario
+Cada uma deve:
+
+Herdar de Funcionario
+
+Implementar Bonificacao
+
+Ter sua própria forma de calcular o salário final (ex: descontos, bônus, etc.)
+
+Tratamento de Exceções:
+
+Tratar erros de entrada inválida com InputMismatchException
+
+Impedir que o salário base ou bônus seja negativo (com if ou throw)
+
+Menu Principal (main):
+
+Cadastrar novo funcionário
+
+Listar funcionários
+
+Aplicar bônus a um funcionário
+
+Calcular e exibir o salário final de todos
+
+Sair
+
+💡 Dicas para estruturar:
+
+Use um ArrayList<Funcionario> pra armazenar todos os funcionários (e aplicar polimorfismo real).
+
+O método calcularSalarioFinal() de cada tipo pode fazer cálculos diferentes (ex: efetivo ganha bônus fixo,
+temporário desconto, estagiário metade do bônus).
+
+Coloque os try / catch onde o usuário digita valores numéricos (salário, bônus, etc).
+
+Mensagens claras no console ajudam a depurar.
+
+Esse exercício é o próximo nível do sistema bancário que você fez:
+
+No anterior → manipulação de contas e dinheiro
+
+Agora → manipulação de objetos e regras de negócio
